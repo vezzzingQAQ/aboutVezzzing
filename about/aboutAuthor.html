@@ -34,6 +34,14 @@
         <link rel="icon" type="image/x-icon" href="ico/ico1.jpg">
         <title>vezzzingQAQ</title>
         <style>
+            main{
+                position: fixed;
+                left: 0;
+                top: 0;
+                width: 100vw;
+                height: 100vh;
+                z-index: -1;
+            }
             ::-webkit-scrollbar{
                 display: none;
             }
@@ -44,22 +52,26 @@
                 max-width: 50em;
                 font-family: Arial, 微软雅黑，"Microsoft yahei", "Hiragino Sans GB", "冬青黑体简体中文 w3", STXihei, 华文细黑, SimSun, 宋体, Heiti, 黑体, sans-serif;
                 width: 100vw;
-                background-color: rgb(255, 255, 255);
+                background-color: rgb(0, 0, 0);
             }
             h2,h3{
                 margin-top: 1em;
-                background-color: rgb(245, 245, 245);
+                color: rgb(245, 245, 245);
                 position: relative;
                 border-left:5px blueviolet solid;
                 padding-left: 5px;
             }
+            p{
+                color: white;
+            }
             a{
-                color: blueviolet;
+                color: yellow;
             }
             .PictureSmall{
                 width: 100px;
                 height: 100px;
                 background-size: cover;
+                opacity: 0.9;
             }
             .content .plan{
                 color: rgb(150, 150, 150);
@@ -78,6 +90,8 @@
                 $(".return").fadeIn(1000);
             });
         </script>
+        <script src="support/p5.min.js"></script>
+        <script src="support/bannerP5_1.js"></script>
     </head>
     <body>
         <section class="header">
@@ -96,7 +110,7 @@
                 <p class="plan stage2">->Vue3->BootSpring?</p>
                 <h3 class="stage1">设计端</h3>
                 <p class="stage2">ps->ai->ae->pr->C4D->id</p>
-                <p class="plan stage2">->blender->unity3D->ue4</p>
+                <p class="plan stage2">autoCAD->blender->unity3D->rhino->ue4</p>
                 <p class="stage2">俺的github账号:<a href="https://github.com/vezzzingQAQ" target="_blank">传送门</a>(要梯子)</p>
                 <p class="stage2">欢迎来点个小星星\(￣︶￣*\))</p>
                 <img class="Picture stage1" src="pictures/bottom1.jpg">
@@ -110,7 +124,7 @@
                 <p class="stage2"></p>
                 <h2 class="stage1">ACstudio</h2>
                 <p class="stage2">A-Artistic【艺术的】;C-Calculated【计算的】</p>
-                <p class="stage2">自古艺科不分家</p>
+                <p class="stage2">传说中的创院...</p>
 
             </div>
         </section>
