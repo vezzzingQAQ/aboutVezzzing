@@ -1,58 +1,49 @@
-var rtx=0;
-var rty=0;
-var rtz=0;
-var sizer=200;
-var wordT=0;
-
+var sList=[
+    "vezzzing love u",
+    "vezzzing love u",
+    "vezzzing love u",
+    "wait",
+    "3.1415926535",
+    "loveeee!",
+    "u",
+    "we find you!!",
+    "everything flows",
+    "well....",
+    "3x err..",
+    "v1 rotate!!!",
+    "that's all thank you",
+    "vezzzingQAQ yyds!!!",
+    "yyds"
+]
+var textList=[];
+class Sts{
+    constructor(sList,x,y){
+        this.sList=sList;
+        this.life=200;
+        this.position=createVector(x,y);
+        this.speed=createVector(random()*2-1,-random()*5-2);
+        this.word=this.sList[int(random()*this.sList.length)]
+    }
+    run(){
+        this.life--;
+        this.position.add(this.speed);
+        fill(255,50);
+        text(this.word,this.position.x,this.position.y);
+    }
+}
 function setup() {
-    createCanvas(windowWidth, windowHeight,WEBGL);
-    translate(width/2,height/2-80,0);
+    createCanvas(windowWidth, windowHeight);
     background(0);
 }
 function windowResized() {
     resizeCanvas(windowWidth, windowHeight);
 }
 function draw() {
-    rtx+=0.005;
-    rty+=0.005;
-    rtz+=0.005;
-    //lights();
-    pointLight(255,255,180,100,100,100);
-    rotateX(rtx);
-    rotateY(rty);
-    rotateZ(rtz);
-    background(0);
-
-    var index=0;
-    var r=300;
-    wordT+=0.005;
-    for(i=0;i<2*PI;i+=2*PI/200){
-        rotateX(i)//天女撒花版;
-        push();
-        //rotateX(i)//无限螺旋板;
-        textSize(50);
-        //rectMode(SHAPE);
-        rotateY(wordT);
-        fill(sin(wordT*10+index)*120+120,sin(wordT*30+index)*120+120,sin(wordT*20+index)*120+120,200);
-        push();
-        translate(sin(i+wordT)*r,0,cos(i+wordT)*r);
-        box(10);
-        pop();
-        pop();
-        index+=1;
-    }
+    background(24);
+    textList.forEach(textObject => {
+        textObject.run();
+    });
 }
 function mouseMoved(){
-    rty=map(mouseX,-500,500,-2*PI,0);
-    rotateY(rty);
-    rtx=map(mouseY,500,-500,-2*PI,0);
-    rotateY(rtx);
-    return false;
-}
-function touchMoved(){
-    rty=map(touchX,-500,500,-2*PI,0);
-    rotateY(rty);
-    rtx=map(touchY,500,-500,-2*PI,0);
-    rotateY(rtx);
-    return false;
+    textList.push(new Sts(sList,mouseX,mouseY));
 }
