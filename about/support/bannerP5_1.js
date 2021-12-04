@@ -27,7 +27,9 @@ class Sts{
     run(){
         this.life--;
         this.position.add(this.speed);
-        fill(255,50);
+        //fill(255,50);
+        fill(0,20);
+        textSize(20);
         text(this.word,this.position.x,this.position.y);
     }
 }
@@ -39,7 +41,8 @@ function windowResized() {
     resizeCanvas(windowWidth, windowHeight);
 }
 function draw() {
-    background(24);
+    //background(24);
+    background(254);
     textList.forEach(textObject => {
         textObject.run();
     });
