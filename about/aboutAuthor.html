@@ -28,159 +28,197 @@
 <!--一一一一一一一一一一一一一一一一一一一一一一二一一一一一一一一一一一一一一-->
 
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" type="image/x-icon" href="ico/ico1.jpg">
-        <title>vezzzingQAQ</title>
-        <style>
-            ::selection{
-                background-color: rgba(255,255,255,0.2);
-            }
-            main{
-                position: fixed;
-                left: 0;
-                top: 0;
-                width: 100vw;
-                height: 100vh;
-                z-index: -1;
-            }
-            ::-webkit-scrollbar{
-                display: none;
-            }
-            body{
-                margin: 0 auto;
-                line-height: 1.75;
-                padding: 4em 1em;
-                max-width: 50em;
-                font-family: Arial, 微软雅黑，"Microsoft yahei", "Hiragino Sans GB", "冬青黑体简体中文 w3", STXihei, 华文细黑, SimSun, 宋体, Heiti, 黑体, sans-serif;
-                width: 100vw;
-                background-color: rgb(255, 255, 255);
-            }
-            h2,h3{
-                margin-top: 1em;
-                color: rgb(36, 36, 36);
-                position: relative;
-                letter-spacing: 3px;
-                border: 2px solid rgba(0,0,0,0.8);
-                border-radius: 5px;
-                width: max-content;
-                padding-left: 5px;
-            }
-            p{
-                color: rgb(51, 51, 51);
-                letter-spacing: 2px;
-            }
-            a{
-                color: rgb(51, 0, 61);
-                transition: 0.2s ease-in-out;
-            }
-            a:hover{
-                letter-spacing: 5px;
-            }
-            .PictureSmall{
-                width: 100px;
-                height: 100px;
-                background-size: cover;
-                border: 2px solid rgba(0, 0, 0, 0.089);
-            }
-            .Picture{
-                width: 150px;
-                border: 2px solid rgba(0, 0, 0, 0.089);
-            }
-            .content .plan{
-                color: rgb(94, 94, 94);
-            }
-            .stage2{
-                display: none;
-            }
-            .return{
-                display: none;
-            }
-            .header{
-                width: 100%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                margin: 0;
-                padding: 0;
-            }
-            .logoImgContainer{
-                margin: 0;
-                padding: 0;
-                display: flexbox;
-                background-image: url("pictures/logoA.png");
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: contain;
-                width: 70vw;
-                height: 70vh;
-            }
-            /*项目ICO*/
-            .projectImg{
-                width: 150px;
-                border: 2px solid rgba(0, 0, 0, 0.089);
-                border-radius: 5px;
-            }
-        </style>
-        <script src="support/jquery.js"></script>
-        <script>
-            $(function(){
-                $(".stage2").slideDown(1000);
-                $(".return").fadeIn(1000);
-            });
-        </script>
-        <script src="support/p5.min.js"></script>
-        <script src="support/bannerP5_1.js"></script>
-    </head>
-    <body>
-        <section class="content">
-            <div class="aboutMain">
-                <h2 class="stage1">ACs<span style="font-size: 36px;">t</span>ud<span style="font-size: 36px;">i</span>o</h2>
-                <p class="stage2">A-Artistic【艺术的】;C-Calculated【计算的】</p>
-                <p class="stage2">传说中的<span style="font-size: 31px;">创</span>院...</p>
-                <p class="stage2">够<span style="font-size: 31px;">硬核</span>,也够<span style="font-size: 31px;">关怀</span>的<span style="font-size: 25px;">设计</span>工作室</p>
-                <br>
-                <h2 class="stage1">Ve<span style="font-size: 40px;">zzz</span>ingQAQ</h2>
-                <p class="stage2">现就读于<span style="font-size: 26px;"> 中国美术学院 </span>,大二,平时写一些小项目练练手</p>
-                <p class="stage2">立志做一个<span style="font-size: 20px;">全栈</span>+<span style="font-size: 26px;">UI</span>的设计师/程序猿/<span style="font-size: 26px;">异</span>术家?</p>
-                <p class="stage2">俺的秃头之路</p>
-                <h3 class="stage1">开<span style="font-size: 27px;">发</span>端</h3>
-                <p class="stage2">
-                    vb-><span style="font-size: 26px;">processing.py</span>-><span style="font-size: 36px;">python</span>->javaSE-><span style="font-size: 26px;">A</span>ndroid->python:pyqt5;python:matplotlib;python:openCV->html5->css3->
-                    <span style="font-size: 25px;">j</span>ava<span style="font-size: 25px;">s</span>cript->p<span style="font-size: 35px;">5</span>.js->jQuery->ajax+(php)->python:d<span style="font-size: 25px;">J</span>ango->UbuntuECS-><del>C#[unity]</del>
-                </p>
-                <p class="plan stage2">-><del>Vue3</del>-><del>BootSpring</del>-><span style="font-size: 26px;">C++</span>?</p>
-                <h3 class="stage1"><span style="font-size: 36px;">设</span>计端</h3>
-                <p class="stage2">ps->ai->ae->pr-><span style="font-size: 20px;">C4D</span>->id</p>
-                <p class="plan stage2">autoCAD->xd->blender-><del>unity3D</del>->rhino-><del>ue4</del>-><span style="font-size: 26px;">ue5</span></p>
-                <br>
-                <p class="stage2">俺的github账号:<a href="https://github.com/vezzzingQAQ" target="_blank">传送门</a>(要梯子)</p>
-                <p class="stage2">欢迎来点个<span style="font-size: 26px;">小星星</span>\(￣︶￣*\))</p>
-                <img class="Picture stage1" src="pictures/AAD.png" style="border-radius: 5px;">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="ico/ico1.jpg">
+    <title>vezzzingQAQ</title>
+    <style>
+        ::selection {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        main {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: -1;
+        }
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
+
+        body {
+            margin: 0 auto;
+            line-height: 1.75;
+            padding: 4em 1em;
+            max-width: 50em;
+            font-family: Arial, 微软雅黑，"Microsoft yahei", "Hiragino Sans GB", "冬青黑体简体中文 w3", STXihei, 华文细黑, SimSun, 宋体, Heiti, 黑体, sans-serif;
+            width: 100vw;
+            background-color: rgb(255, 255, 255);
+        }
+
+        h2,
+        h3 {
+            margin-top: 1em;
+            color: rgb(36, 36, 36);
+            position: relative;
+            letter-spacing: 3px;
+            border: 2px solid rgba(0, 0, 0, 0.8);
+            border-radius: 5px;
+            width: max-content;
+            padding-left: 5px;
+        }
+
+        p {
+            color: rgb(51, 51, 51);
+            letter-spacing: 2px;
+        }
+
+        a {
+            color: rgb(51, 0, 61);
+            transition: 0.2s ease-in-out;
+        }
+
+        a:hover {
+            letter-spacing: 5px;
+        }
+
+        .PictureSmall {
+            width: 100px;
+            height: 100px;
+            background-size: cover;
+            border: 2px solid rgba(0, 0, 0, 0.089);
+        }
+
+        .Picture {
+            width: 150px;
+            border: 2px solid rgba(0, 0, 0, 0.089);
+        }
+
+        .content .plan {
+            color: rgb(94, 94, 94);
+        }
+
+        .stage2 {
+            display: none;
+        }
+
+        .return {
+            display: none;
+        }
+
+        .header {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .logoImgContainer {
+            margin: 0;
+            padding: 0;
+            display: flexbox;
+            background-image: url("pictures/logoA.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 70vw;
+            height: 70vh;
+        }
+
+        /*项目ICO*/
+        .projectImg {
+            width: 150px;
+            border: 2px solid rgba(0, 0, 0, 0.089);
+            border-radius: 5px;
+        }
+
+        #vezzzingAvatar {
+            position: fixed;
+            bottom: 0;
+            height: 400px;
+            right: 120px;
+            opacity: 0.6;
+        }
+    </style>
+    <script src="support/jquery.js"></script>
+    <script>
+        $(function () {
+            $(".stage2").slideDown(1000);
+            $(".return").fadeIn(1000);
+        });
+    </script>
+    <script src="support/p5.min.js"></script>
+    <script src="support/bannerP5_1.js"></script>
+</head>
+
+<body>
+    <section class="content">
+        <div class="aboutMain">
+            <h2 class="stage1">ACs<span style="font-size: 36px;">t</span>ud<span style="font-size: 36px;">i</span>o</h2>
+            <p class="stage2">A-Artistic【艺术的】;C-Calculated【计算的】</p>
+            <p class="stage2">传说中的<span style="font-size: 31px;">创</span>院...</p>
+            <p class="stage2">够<span style="font-size: 31px;">硬核</span>,也够<span style="font-size: 31px;">关怀</span>的<span
+                    style="font-size: 25px;">设计</span>工作室</p>
+            <br>
+            <h2 class="stage1">Ve<span style="font-size: 40px;">zzz</span>ingQAQ</h2>
+            <p class="stage2">现就读于<span style="font-size: 26px;"> 中国美术学院 </span>,大二,平时写一些小项目练练手</p>
+            <p class="stage2">立志做一个<span style="font-size: 20px;">全栈</span>+<span
+                    style="font-size: 26px;">UI</span>的设计师/程序猿/<span style="font-size: 26px;">异</span>术家?</p>
+            <p class="stage2">俺的秃头之路</p>
+            <h3 class="stage1">开<span style="font-size: 27px;">发</span>端</h3>
+            <p class="stage2">
+                vb-><span style="font-size: 26px;">processing.py</span>-><span
+                    style="font-size: 36px;">python</span>->javaSE-><span
+                    style="font-size: 26px;">A</span>ndroid->python:pyqt5;python:matplotlib;python:openCV->html5->css3->
+                <span style="font-size: 25px;">j</span>ava<span style="font-size: 25px;">s</span>cript->p<span
+                    style="font-size: 35px;">5</span>.js->jQuery->ajax+(php)->python:d<span
+                    style="font-size: 25px;">J</span>ango->UbuntuECS-><del>C#[unity]</del>
+            </p>
+            <p class="plan stage2">-><del>Vue3</del>-><del>BootSpring</del>-><span style="font-size: 26px;">C++</span>->Vue3
+            </p>
+            <h3 class="stage1"><span style="font-size: 36px;">设</span>计端</h3>
+            <p class="stage2">ps->ai->ae->pr-><span style="font-size: 20px;">C4D</span>->id</p>
+            <p class="plan stage2">autoCAD->xd->blender-><del>unity3D</del>->rhino-><del>ue4</del>-><span
+                    style="font-size: 26px;">ue5</span></p>
+            <br>
+            <p class="stage2">俺的github账号:<a href="https://github.com/vezzzingQAQ" target="_blank">传送门</a>(要梯子)</p>
+            <p class="stage2">欢迎来点个<span style="font-size: 26px;">小星星</span>\(￣︶￣*\))</p>
 
 
-                <h2 class="stage1">俺的其他几个项目</h2>
-                <img class="projectImg" src="./pictures/projects/vel.png">
-                <p class="stage2"><a href="https://vezzzingqaq.github.io/veLibrary/main/mainPage_1.html" target="_blank">veLibrary</a></p>
-                <img class="projectImg" src="./pictures/projects/acs.png">
-                <p class="stage2"><a href="https://vezzzingqaq.github.io/acStudio/mainPage/mainPage_1.html" target="_blank">AC studio静态</a>(也许要梯子?)</p>
-                <img class="projectImg" src="./pictures/projects/ys.png">
-                <p class="stage2"><a href="#" target="_blank">异术</a>  建造中...</p>
-                <img class="projectImg" src="./pictures/projects/tjspg.png">
-                <p class="stage2"><a href="https://vezzzingqaq.github.io/threejsPG/main/editor.html" target="_blank">threeJS操场</a></p>
-                <img class="projectImg" src="./pictures/projects/lsd.jpg">
-                <p class="stage2"><a href="https://vezzzingqaq.github.io/learning-shaderP5/xsSupport/main.html" target="_blank">webGL x shader</a></p>
+            <h2 class="stage1">俺的其他几个项目</h2>
+            <img class="projectImg" src="./pictures/projects/vel.png">
+            <p class="stage2"><a href="#"
+                    target="_blank">veLibrary</a>暂停营业</p>
+            <img class="projectImg" src="./pictures/projects/acs.png">
+            <p class="stage2"><a href="https://vezzzingqaq.github.io/acStudio/mainPage/mainPage_1.html"
+                    target="_blank">AC studio静态</a>(也许要梯子?)</p>
+            <img class="projectImg" src="./pictures/projects/ys.png">
+            <p class="stage2"><a href="#" target="_blank">异术</a> 建造中...</p>
+            <img class="projectImg" src="./pictures/projects/tjspg.png">
+            <p class="stage2"><a href="https://vezzzingqaq.github.io/threejsPG/main/editor.html"
+                    target="_blank">threeJS操场</a></p>
+            <img class="projectImg" src="./pictures/projects/lsd.jpg">
+            <p class="stage2"><a href="https://vezzzingqaq.github.io/learning-shaderP5/xsSupport/main.html"
+                    target="_blank">webGL x shader</a></p>
 
 
-                <h3 class="stage1">怎么<span style="font-size: 32px;">联系</span>俺</h3>
-                <p class="stage2">微信扫这个加我好友↓</p>
-                <img class="PictureSmall stage2" src="pictures/add.jpg">
-                <p class="stage2">微信扫这个请我<span style="font-size: 26px;">吃饭</span>↓</p>
-                <img class="PictureSmall stage2" src="pictures/pay.jpg">
-                <p class="stage2"></p>
-            </div>
-        </section>
-    </body>
+            <h3 class="stage1">怎么<span style="font-size: 32px;">联系</span>俺</h3>
+            <p class="stage2">微信扫这个加我好友↓</p>
+            <img class="PictureSmall stage2" src="pictures/add.jpg">
+            <p class="stage2">微信扫这个请我<span style="font-size: 26px;">吃饭</span>↓</p>
+            <img class="PictureSmall stage2" src="pictures/pay.jpg">
+            <p class="stage2"></p>
+        </div>
+    </section>
+    <img src="./pictures/1.png" id="vezzzingAvatar" class="return">
+</body>
+
 </html>
- 
